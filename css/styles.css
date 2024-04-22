@@ -1,0 +1,225 @@
+/*
+Author: Xavier Gilbert
+Date: 02/29/2024
+File Name: styles.css for Parking Pass
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Style rules for body and images*/
+body{
+	background-color: #3399ff;
+}
+
+img{
+	max-width: 100%;
+	display: block;
+}
+
+/*Style rules for mobile viewport*/
+
+/*Style rules for header*/
+header {
+    height: 190px;
+}
+
+header img{
+	margin: 0 auto;
+	height: 110px;
+}
+
+header h1{
+	font-size: 2em;
+	text-align: center;
+	color: #ffff00;
+}
+
+/*Style rules for nav*/
+nav{
+	padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+nav li{
+	font-family: 'Francois One', sans-serif;
+}
+
+nav li a{
+	text-decoration: none;
+	display: block;
+    padding: 0.5em 1em;
+	color: #ffff00;
+}
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/* Style rules for main content */
+main {
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Style rules for form elements */
+#form{
+	margin-top: 2%;
+	
+}
+
+#form h2{
+	text-align: center;
+}
+
+fieldset, input, textarea  { 
+    margin-bottom: 2%;
+	
+}
+
+fieldset{
+	border-radius: 10px; /* Adjust the value to change the roundness */
+	background-color: #3399ff;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+	text-align: center; 
+	
+}
+
+label {
+    display: block;
+    padding-top: 2%;
+}
+
+form #submitForm {
+    margin: 0 auto;
+    display: block;
+    padding: 2%;
+    background-color: #3399ff;
+    color: #f6eee4;
+    font-size: 1.25em;
+    border-radius: 10px;
+}
+
+#home-links ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+#home-links li{
+	font-family: 'Francois One', sans-serif;
+}
+
+#home-links li a{
+	font-size: 3em;
+	text-decoration: none;
+	display: block;
+    padding: 0.5em 1em;
+	
+}
+
+/*Style rules for the footer*/
+footer p{
+	font-size: 0.75em;
+    text-align: center;
+    color: #ffff00;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+	
+	/* Tablet Viewport: Style rule for header */
+    header {
+        padding: 2%;
+    }
+	
+	header img{
+		height: 150px;
+	}
+	
+	
+    
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+    
+    nav li:last-child {
+        border-right: none;
+    }
+    
+    nav li a {
+        padding: 0.1em 0.50em;
+    }
+	
+	/* Tablet Viewport: Style rules for main content area */
+	form{
+		width: 70%;
+		margin: 0 auto;
+	}
+	
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1024px), print {
+	/* Desktop Viewport: Style rule for header */
+	
+	
+	
+	
+	/* Desktop Viewport: Style rules for nav area */
+	
+	
+	/* Desktop Viewport: Style Rules for main content */
+	* Desktop Viewport: Style Rules for form elements */
+	form{
+		width: auto;
+	}
+	
+	.form-grid{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 20px
+	}
+	
+	#search-form{
+		grid-template-columns: auto;
+	}
+	
+	.btn{
+		grid-column: 1/ span 2;
+	}

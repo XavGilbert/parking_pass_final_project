@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+<!-- Authors: Xavier Gilbert
+	 Date:02/29/2024
+	 Filename:template.html
+-->
+
+	<head>
+
+		<title>NCAT Parking Pass</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/styles.css">
+
+
+	</head>
+
+
+	<body>
+		<div id = "container">
+			<header>
+				<h1>Delete</h1>
+				<a href="index.html"><img src="images/ncatlogo.webp" alt="North Carolina A&T State University Logo"></a>
+		
+			</header>
+		
+			<nav>
+				<ul>
+					<li><a href = "index.html">Home</a></li>
+					<li><a href = "purchase.html">Purchase</a></li>
+					<li><a href = "manage.php">Manage</a></li> 
+					<li><a href = "search.html">Search</a></li> 
+					<li><a href = "delete.html">Delete</a></li> 
+				</ul>
+			</nav>
+		
+<!--The main contains the primary contents of the website-->	
+<!--Be sure to replace the file name at the top, and add name in the footer-->
+			<main>
+			<!--Add content for you club under this comment-->
+				<div id="form">
+					<form id ="search-form" class="form-grid" action="delete.php" method=post>
+						<fieldset>
+							<legend>Delete Parking Pass</legend>
+							
+							<h3>Use pass number to delete pass</h3>
+							<label for="dkeyword">Key Word:</label>
+							<input name="dkeyword" type="text" size="50" maxlength="50" />
+							
+							<input type="submit" id="submitForm" value="Submit" class="btn">
+						</fieldset>
+						
+					
+					</form>
+							
+							
+			</main>
+		
+			<footer>
+				<p>Web page made by: Xavier Gilbert</p>
+				<p><a href = "https://www.ncat.edu/">North Carolina A&T State University</a></p>
+		
+			</footer>
+		
+		</div>
+		
+
+
+	</body>
+
+
+
+</html>
